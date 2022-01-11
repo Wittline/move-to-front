@@ -22,3 +22,4 @@ class mtf(object):
             chrs.append(chr)
             pad = [pad.pop(inx)] + pad
         return ''.join(chrs)
+
