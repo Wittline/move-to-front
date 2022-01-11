@@ -4,7 +4,6 @@ class mtf(object):
         self.table = []
         for i in range(256):
             self.table.append(chr(i))
-
     
     def encode(self, str):
         seq, pad = [], self.table[::]
@@ -22,4 +21,3 @@ class mtf(object):
             chrs.append(chr)
             pad = [pad.pop(inx)] + pad
         return ''.join(chrs)
-
